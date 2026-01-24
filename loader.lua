@@ -23,8 +23,7 @@ local KeyInput = Window:CreateInput({
    Callback = function(Text)
       local HttpService = game:GetService("HttpService")
       -- Replace with your Pastebin raw link containing valid keys (one per line)
-      local KeyUrl = "https://pastebin.com/raw/YOUR_KEYLIST_ID"
-      
+      local KeyUrl = "https://raw.githubusercontent.com/DexWRLD/dexscript/refs/heads/main/keys.txt"      
       pcall(function()
          local KeyResponse = HttpService:GetAsync(KeyUrl)
          local Keys = KeyResponse:split("\n")
