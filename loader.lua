@@ -18,7 +18,7 @@ Window:CreateParagraph({Title = "Get Your Key", Content = "1. Join Discord: http
 
 local KeyInput = Window:CreateInput({
    Name = "Enter Key",
-   PlaceholderText = "DEX-XXXXXXXX",
+   PlaceholderText = "HELIX-XXXXXXXX",
    RemoveTextAfterFocusLost = false,
    Callback = function(Text)
       local HttpService = game:GetService("HttpService")
