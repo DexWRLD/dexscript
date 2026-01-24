@@ -22,8 +22,9 @@ local function LoadKeys()
     
     if success then
         for key in result:gmatch("[^\n]+") do
-            table.insert(ValidKeys, (key:gsub("%s+", "")))        return true
-    else
+            table.insert(ValidKeys, (key:gsub("%s+", "")))    else
+                    end
+                return true
         warn("Failed to load keys: " .. tostring(result))
         return false
     end
