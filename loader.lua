@@ -18,8 +18,7 @@ local Player = Players.LocalPlayer
 -- Fetch valid keys from GitHub
 local function LoadKeys()
     local success, result = pcall(function()
-        return HttpService:GetAsync(KeyUrl)
-    end)
+        return game:HttpGet(KeyUrl)    end)
     
     if success then
         for key in result:gmatch("[^\n]+") do
